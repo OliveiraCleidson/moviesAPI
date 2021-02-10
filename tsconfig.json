@@ -10,6 +10,18 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "@services/*" : ["src/services/*"],
+      "@dtos/*" : ["src/dtos/*"],
+      "@config/*" : ["src/config/*"],
+      "@entities/*" : ["src/entities/*"],
+      "@controllers/*" : ["src/controllers/*"],
+      "@repositories/*" : ["src/repositories/*"]
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "src/@types"
+    ]
   }
 }
