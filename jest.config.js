@@ -11,11 +11,15 @@ module.exports = {
     '^.+\\.(t|j)s$': 'ts-jest',
   },
   clearMocks: true,
-  collectCoverageFrom: ['<rootDir>/src/modules/**/services/**/*.service.ts'],
+  collectCoverageFrom: [
+    '<rootDir>/src/modules/**/services/**/*.ts'
+  ],
   coverageDirectory: './coverage',
-  coverageReporters: ['text-summary', 'lcov'],
+  coverageReporters: [
+    'text-summary',
+    "lcov",
+  ],
+  
   testEnvironment: 'node',
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
-    prefix: '<rootDir>',
-  }),
+  moduleNameMapper:pathsToModuleNameMapper(compilerOptions.paths, {prefix: '<rootDir>'} ) ,
 };

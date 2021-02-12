@@ -46,6 +46,10 @@ export class FakeMoviesRepository implements MoviesRepository {
     this.entities.splice(indexOfEntity, 1);
   }
 
+  async findAll(): Promise<MovieEntity[]> {
+    return [...this.entities];
+  }
+
   private generateNumberId(): number {
     if (this.entities.length === 0) {
       return 0;

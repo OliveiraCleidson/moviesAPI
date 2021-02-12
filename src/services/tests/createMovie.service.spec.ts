@@ -13,14 +13,14 @@ describe('Create Movie Service', () => {
     createMovieService = new CreateMovieService(moviesRepository);
     createDTO = {
       category: CategoryEnum.ACTION,
-      name: 'Velozes e Furiosos',
+      name: 'Velozes e Furiosos 5',
       rate: 5,
       description: 'Um filme bom de mais da conta!',
     };
   });
 
   it('category should not be approved', async () => {
-    expect(
+    await expect(
       createMovieService.execute({
         ...createDTO,
         category: 97,

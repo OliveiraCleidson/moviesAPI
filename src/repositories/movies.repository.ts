@@ -10,4 +10,6 @@ export abstract class MoviesRepository {
   abstract update(data: UpdateMovieDTO): Promise<MovieEntity>;
 
   abstract delete(id: number): Promise<void>;
+
+  abstract findAll(): Promise<MovieEntity[]>;
 }
