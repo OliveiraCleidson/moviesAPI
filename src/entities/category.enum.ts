@@ -1,4 +1,4 @@
 export enum CategoryEnum {
-  ACTION,
-  HORROR,
+  ACTION = 'Ação',
+  HORROR = 'Horror',
 }

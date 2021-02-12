@@ -12,7 +12,7 @@ module.exports = {
   },
   clearMocks: true,
   collectCoverageFrom: [
-    '<rootDir>/src/modules/**/services/**/*.ts'
+    '<rootDir>/src/**/services/**/*.ts'
   ],
   coverageDirectory: './coverage',
   coverageReporters: [

@@ -1,5 +1,3 @@
-import { CreateMovieDTO } from '@dtos/createMovie.dto';
-import { CategoryEnum } from '@entities/category.enum';
 import { FakeMoviesRepository } from '@repositories/fakes/fakeMovies.repository';
 import { MoviesRepository } from '@repositories/movies.repository';
 import { FindAllMoviesService } from '@services/findAllMovies.service';
